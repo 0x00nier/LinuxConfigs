@@ -163,7 +163,9 @@ require('lazy').setup({
       return vim.fn.executable 'make' == 1
     end,
   },
-
+  {
+    'nvim-telescope/telescope-file-browser.nvim' 
+  },
   { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     dependencies = {
@@ -505,6 +507,5 @@ require('lspconfig').pylsp.setup {
     }
   }
 }
-
--- The line beneath this is called `modeline`. See `:help modeline`
+--- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
